@@ -1,0 +1,29 @@
+body {
+  font-size: 18px;
+  font-family: sans-serif;
+  line-height: 2.5;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.invisible {
+  display:none;
+}
+
+select {
+    font-size: 1em;
+
+}
+
+input[type="text"] {
+  text-align: right;
+  border: 1px solid #999;
+  border-bottom: 2px solid #555;
+  border-radius: 3px;
+  padding: .3em .2em;
+  width: 5em;
+  font-size: 1.2em;
+  
+}
