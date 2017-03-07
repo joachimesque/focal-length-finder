@@ -14,7 +14,6 @@ $(document).ready(function() {
         $("#fullframeresult").text(result + "mm zoom lens");
       }
       else if (!isNaN($("#fullframe")[0].value)) {
-        console.log( parseFloat($("#fullframe")[0].value) + " * " + parseFloat($("#sensorselect")[0].value) + "/" + "43.2");
         result = parseFloat($("#fullframe")[0].value) * parseFloat($("#sensorselect")[0].value) / 43.2;
         $("#fullframeresult").text(Math.round(result) + "mm lens");
       }
