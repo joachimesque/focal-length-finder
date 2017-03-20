@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Focal Length Finder</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <div> </div>
+  <div>
+  <p><label for="sensorselect">Quelle est la taille du capteur de ton appareil ?</label>
+    <select name="" id="sensorselect">
+      <option value="0">Sélectionner…</option>
+      <option value="300">Film Grand Format 8x10</option>
+      <option value="210">Film Grand Format 5x7</option>
+      <option value="150">Film Grand Format 4x5</option>
+      <option value="87">Film Moyen Format 6x7</option>
+      <option value="79">Film Moyen Format 6x6</option>
+      <option value="70">Film Moyen Format 6x4.5</option>
+      <option value="67.4">Phase One P 65+, IQ160, IQ180</option>
+      <option value="67.08">Moyen Format (Hasselblad H5D-60)</option>
+      <option value="61.3">Kodak KAF 39000 CCD</option>
+      <option value="55">Pentax 645D, Hasselblad X1D-50c, CFV-50c, Fuji GFX 50S</option>
+      <option value="54">Leica S</option>
+      <option value="43.2">Full Frame</option>
+      <option value="33.5">APS-H (Canon)</option>
+      <option value="28.3">APS-C (Nikon, Sony, Pentax, Fuji…), Sigma Foveon</option>
+      <option value="26.82">APS-C (Canon)</option>
+      <option value="24.9">Sigma Foveon X3 Original</option>
+      <option value="21.6">4/3, Micro 4/3 (Olympus, Panasonic)</option>
+      <option value="15.86">1" (Sony, Nikon, Samsung)</option>
+      <option value="11">2/3" (Nokia Lumia 1020, Fujifilm X-S1, X20, XF1)</option>
+      <option value="9.5">1/1.7" (Pentax Q7, Canon G10, G15)</option>
+      <option value="7.18">1/2.5"</option>
+      <option value="6">1/3" (iPhone 5s, 6, 7)</option>
+    </select>
+  </p>
+
+  <p class="invisible">Si tu veux l’équivalent d'un <input type="text" name="fullframe" id="fullframe">mm en  <label for="fullframe">Full Frame</label>, il te faut une <strong id="fullframeresult">optique ??mm</strong>.</p>
+
+
+  <p class="invisible">Une optique qui a pour longueur focale <label for="sensor"></label> <input type="text" name="sensor" id="sensor">mm se comportera comme une optique <strong id="sensorresult">??mm</strong> en Full Frame.</p>
+  <p><small>Si tu veux tester avec un zoom, au lieu d'une valeur simple, entre une valeur de zoom, par exemple: <strong>18-80</strong></small></p>
+</div>
+<p><small>J'ai fait ça pour l'utiliser. Les valeurs viennent de <a href="https://en.wikipedia.org/wiki/Image_sensor_format#Table_of_sensor_formats_and_sizes">Wikipedia:Image sensor format</a>. Le code est dispo sur <a href="https://github.com/joachimesque/focal-length-finder">GitHub</a>, l'important c'est que ça marche.</small></p>
+
+<!-- I honestly don't know why I used jQuery -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+
+    <script src="js/index.fr.js"></script>
+
+</body>
+</html>
