@@ -11,7 +11,7 @@ $(document).ready(function() {
             result += (j == 0 ? "-" : "");
           }
         });
-        $("#fullframeresult").text("optique zoom" + result + "mm");
+        $("#fullframeresult").text("optique zoom " + result + "mm");
       }
       else if (!isNaN($("#fullframe")[0].value)) {
         result = parseFloat($("#fullframe")[0].value) * parseFloat($("#sensorselect")[0].value) / 43.2;
@@ -32,7 +32,7 @@ $(document).ready(function() {
             result += (j == 0 ? "-" : "");
           }
         });
-        $("#sensorresult").text("optique zoom" + result + "mm");
+        $("#sensorresult").text("optique zoom " + result + "mm");
       }
       else if (!isNaN($("#sensor")[0].value)) {
         result = parseFloat($("#sensor")[0].value) * 43.2 / parseFloat($("#sensorselect")[0].value);
