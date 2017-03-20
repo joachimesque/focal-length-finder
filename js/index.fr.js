@@ -15,7 +15,7 @@ $(document).ready(function() {
       }
       else if (!isNaN($("#fullframe")[0].value)) {
         result = parseFloat($("#fullframe")[0].value) * parseFloat($("#sensorselect")[0].value) / 43.2;
-        $("#fullframeresult").text("optique fixe " + Math.round(result) + "mm");
+        $("#fullframeresult").text("optique " + Math.round(result) + "mm");
       }
     }
 
@@ -36,7 +36,7 @@ $(document).ready(function() {
       }
       else if (!isNaN($("#sensor")[0].value)) {
         result = parseFloat($("#sensor")[0].value) * 43.2 / parseFloat($("#sensorselect")[0].value);
-        $("#sensorresult").text("optique fixe " + Math.round(result) + "mm");
+        $("#sensorresult").text("optique " + Math.round(result) + "mm");
       }
     }
 
